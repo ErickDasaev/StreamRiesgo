@@ -12,4 +12,4 @@ companies_all = pd.read_csv('data/companies.csv')
 option = st.selectbox('Companies', tuple(set(companies_all['registered_name'].unique())))
 
 st.write('Contratos:')
-st.dataframe(data=companies_all, width=None, height=None)
+st.dataframe(data=contracts_data , width=None, height=None)
