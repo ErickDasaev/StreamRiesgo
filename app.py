@@ -4,10 +4,10 @@ import numpy as np
 
 st.title('Medidas de Riesgo Fiscal')
 
-invoices = pd.to_csv('data/invoices.csv')
-direct_debit = pd.to_csv('data/ddebit.csv')
-contracts_data = pd.to_csv('data/contracts.csv')
-companies_all = pd.to_csv('data/companies.csv')
+invoices = pd.read_csv('data/invoices.csv')
+direct_debit = pd.read_csv('data/ddebit.csv')
+contracts_data = pd.read_csv('data/contracts.csv')
+companies_all = pd.read_csv('data/companies.csv')
 
 option = st.selectbox('Companies', tuple(set(companies_all['registered_name'].unique())))
 
