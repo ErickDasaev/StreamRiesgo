@@ -59,5 +59,5 @@ if len(outData[outData['company_id'] == optionid]) > 0:
         st.markdown(index)
         st.subheader(value)
 
-    else:
-        st.header('No contract was found for this customer')
+else:
+    st.header('No contract was found for this customer')
