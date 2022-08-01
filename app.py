@@ -54,4 +54,4 @@ for index, value in conInfo.loc[['sat_declaration_rate',
         'l6m_total_employees',
         'l12m_total_employees']].items():
     st.markdown(index)
-    st.text('**'+str(value)+'**')
+    st.subheader(value)
