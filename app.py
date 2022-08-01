@@ -15,4 +15,4 @@ st.write('Empresas:')
 option = st.sidebar.selectbox('Companies', tuple(set(companies_all['business_name'].unique())))
 optionid = companies_all[companies_all['business_name']==option].iloc[0]['id']
 st.write('Contratos:')
-st.dataframe(data=contracts_data , width=None, height=None)
+st.dataframe(data=contracts_data[contracts_data['company_id']==optionid], width=None, height=None)
