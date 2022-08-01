@@ -1,4 +1,3 @@
-import psycopg2
 import pandas as pd
 from pydantic import BaseSettings, Field, PostgresDsn
 import pendulum
