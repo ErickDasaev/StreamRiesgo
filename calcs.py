@@ -1,7 +1,7 @@
 import pandas as pd
-from pydantic import BaseSettings, Field, PostgresDsn
 import pendulum
 import datetime
+
 
 def get_incomes_by_company_info(invoices, company_id, date):
     incomes = invoices[
