@@ -22,3 +22,7 @@ st.write('Facturas:')
 st.dataframe(data=invoices[invoices['company_id'] == optionid], width=None, height=None)
 
 conInfo = outData[outData['company_id'] == optionid].iloc[0]
+
+for index, value in conInfo.items():
+    st.header(index)
+    st.text(value)
